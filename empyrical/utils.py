@@ -16,8 +16,6 @@ from datetime import datetime
 from functools import wraps
 from os import makedirs, environ
 from os.path import expanduser, join, getmtime, isdir
-import errno
-import warnings
 
 import numpy as np
 from numpy.lib.stride_tricks import as_strided

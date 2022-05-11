@@ -27,39 +27,15 @@ statistics commonly used in quantitative finance by `Quantopian Inc`_.
 .. _Zipline: https://zipline.io
 .. _pyfolio: https://quantopian.github.io/pyfolio/
 """
-MAINTAINER = "Quantopian Inc"
-MAINTAINER_EMAIL = "opensource@quantopian.com"
-AUTHOR = "Quantopian Inc"
-AUTHOR_EMAIL = "opensource@quantopian.com"
-URL = "https://github.com/quantopian/empyrical"
-LICENSE = "Apache License, Version 2.0"
-
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 2",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 2.7",
-    "Programming Language :: Python :: 3.4",
-    "Programming Language :: Python :: 3.5",
-    "License :: OSI Approved :: Apache Software License",
-    "Intended Audience :: Science/Research",
-    "Topic :: Scientific/Engineering",
-    "Topic :: Scientific/Engineering :: Mathematics",
-    "Operating System :: OS Independent"
-]
-
 
 test_reqs = [
     "pytest>=7.1.2",
 ]
 
-
 requirements = [
     'numpy>=1.9.2',
     'pandas>=0.16.1',
     'scipy>=0.15.1',
-    "pandas-datareader>=0.2"
 ]
 
 extras_requirements = {
@@ -68,20 +44,14 @@ extras_requirements = {
     ]
 }
 
-
 if __name__ == "__main__":
     setup(
         name=DISTNAME,
         cmdclass=versioneer.get_cmdclass(),
         version=versioneer.get_version(),
-        maintainer=MAINTAINER,
-        maintainer_email=MAINTAINER_EMAIL,
         description=DESCRIPTION,
-        license=LICENSE,
-        url=URL,
         long_description=LONG_DESCRIPTION,
         packages=["empyrical", "empyrical.tests"],
-        classifiers=classifiers,
         install_requires=requirements,
         extras_require=extras_requirements,
         tests_require=test_reqs,
