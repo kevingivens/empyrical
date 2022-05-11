@@ -51,8 +51,7 @@ classifiers = [
 
 
 test_reqs = [
-    "nose>=1.3.7",
-    "parameterized>=0.6.1"
+    "pytest>=7.1.2",
 ]
 
 
@@ -60,14 +59,11 @@ requirements = [
     'numpy>=1.9.2',
     'pandas>=0.16.1',
     'scipy>=0.15.1',
-    'six',
     "pandas-datareader>=0.2"
 ]
 
 extras_requirements = {
     "dev": [
-        "nose==1.3.7",
-        "parameterized==0.6.1",
         "flake8==2.5.1"
     ]
 }
