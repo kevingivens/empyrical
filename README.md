@@ -9,10 +9,17 @@ Common financial risk metrics.
 ## Table of Contents
 
 - [Installation](#installation)
+- [New Features](#newfeatures)
 - [Usage](#usage)
 - [Support](#support)
 - [Contributing](#contributing)
 - [Testing](#testing)
+
+## New Features
+The following features have be changed in this fork 
+- Py2 support dropped
+- Unittest changed to pytest
+- Pandas datareader functionality dropped 
 
 ## Installation
 ```
