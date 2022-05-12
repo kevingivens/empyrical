@@ -33,16 +33,16 @@ test_reqs = [
 ]
 
 requirements = [
-    'numpy>=1.9.2',
-    'pandas>=0.16.1',
-    'scipy>=0.15.1',
+    'numpy>=1.22.3',
+    'pandas>=1.4.2',
+    'scipy>=1.8.0',
 ]
 
-extras_requirements = {
-    "dev": [
-        "flake8==2.5.1"
-    ]
-}
+#extras_requirements = {
+#    "dev": [
+#        "flake8==2.5.1"
+#    ]
+#}
 
 if __name__ == "__main__":
     setup(
@@ -51,9 +51,9 @@ if __name__ == "__main__":
         version=versioneer.get_version(),
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
-        packages=["empyrical", "empyrical.tests"],
+        packages=["empyrical", "tests"],
         install_requires=requirements,
-        extras_require=extras_requirements,
-        tests_require=test_reqs,
-        test_suite="nose.collector"
+        # extras_require=extras_requirements,
+        # tests_require=test_reqs,
+        # test_suite="nose.collector"
     )
