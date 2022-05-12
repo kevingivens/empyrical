@@ -8,14 +8,14 @@ Common financial risk metrics.
 
 ## Table of Contents
 
+- [Updates](#updates)
 - [Installation](#installation)
-- [New Features](#newfeatures)
 - [Usage](#usage)
 - [Support](#support)
 - [Contributing](#contributing)
 - [Testing](#testing)
 
-## New Features
+## Updates
 The following features have be changed in this fork 
 - Py2 support dropped
 - Unittest changed to pytest
@@ -109,9 +109,8 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 
 ## Testing
 - install requirements
-  - "nose>=1.3.7",
-  - "parameterized>=0.6.1"
+  - "pytest",
 
 ```
-./runtests.py
+pytest
 ```
