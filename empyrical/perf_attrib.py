@@ -159,3 +159,4 @@ def compute_exposures(positions, factor_loadings):
     """
     risk_exposures = factor_loadings.multiply(positions, axis='rows')
     return risk_exposures.groupby(level='dt').sum()
+

@@ -1,3 +1,4 @@
+from tabnanny import verbose
 import pytest
 
 import numpy as np
@@ -66,7 +67,7 @@ class TestPerfAttrib():
                                                               positions,
                                                               factor_returns,
                                                               factor_loadings)
-
+    
         pd.testing.assert_frame_equal(expected_perf_attrib_output,
                                            perf_attrib_output)
 

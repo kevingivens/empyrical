@@ -994,7 +994,7 @@ def _aligned_series(*many_series):
     # dataframe has no ``itervalues``
     return (
         v
-        for _, v in pd.concat(map(_to_pandas, many_series), axis=1).iteritems
+        for _, v in pd.concat(map(_to_pandas, many_series), axis=1).iteritems()
     )
 
 
